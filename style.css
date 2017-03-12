@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('fonts/helveticaneue-thin-webfont.eot');
+    src: url('fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url('img/background.jpg') no-repeat;
+    background-size: 100%;
+    font-family: "Helvetica Neue Regular", Arial, sans-serif;
+}
+
+.container {
+    height: 1180px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #074e8c;
+}
+
+.menu ul {
+    margin-right: 20px;
+}
+
+.menu li {
+    display: inline-flex;
+    font-size: 14px;
+    list-style: none;
+}
+
+.menu a {
+    padding: 12px 14px;
+    color: #60b5ed;
+    text-decoration: none;
+}
+
+.menu1 a:hover {
+    background-color: #4eabda;
+    color: #fff;
+}
+
+.menu2 a:hover {
+    padding: 12px 13px;
+    border-right: 1px solid #4c9dd7;
+    border-left: 1px solid #4c9dd7;
+    background: url('img/bgrhover.jpg') repeat-x;
+    background-size: 100%;
+}
+
+.menu2 a {
+    color: #fff;
+}
+
+.menu2 span {
+    text-decoration: underline;
+}
+
+.flag {
+    padding-left: 45px;
+    background: url('img/flag1.png') no-repeat;
+    background-position: left;
+}
+
+/* FORM */
+
+.centerbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1140px;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 560px;
+    height: 62px;
+    margin-bottom: 2px;
+    background: rgba(0, 0, 0, .5);
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.form {
+    position: relative;
+    width: 560px;
+    height: 550px;
+    background: rgba(0, 0, 0, .5);
+}
+
+form {
+    margin-top: 36px;
+    text-align: center;
+}
+
+.form .imagefb {
+    position: absolute;
+    top: 36px;
+    left: 142px;
+}
+
+.fb input {
+    width: 276px;
+    height: 35px;
+    opacity: 0;
+}
+
+.form .line {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.form .typetext {
+    width: 276px;
+    margin: auto;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 276px;
+    height: 35px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #ccc;
+    background-color: #0f0f0f;
+    border: none;
+    border-bottom: 1px solid #484848;
+    padding-left: 20px;
+}
+
+input[type=text]:hover,
+input[type=password]:hover,
+input[type=email]:hover {
+    background-color: #1b5288;
+    border-bottom: 1px solid #689bcc;
+    box-shadow: 0px 0px 20px #85b6e5;
+}
+
+input[type=checkbox] {
+    margin-left: -20px;
+}
+
+.imgcreate {
+    position: absolute;
+    bottom: 66px;
+    left: 205px;
+}
+
+input[type=submit] {
+    margin-top: 25px;
+    width: 150px;
+    height: 35px;
+    opacity: 0;
+}
+
+.agree p {
+    text-align: center;
+    font-size: 11px;
+    margin-top: 20px;
+}
